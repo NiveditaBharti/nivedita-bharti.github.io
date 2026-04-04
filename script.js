@@ -7,7 +7,6 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close menu when a nav link is clicked
 navMenu.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -15,7 +14,6 @@ navMenu.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
         hamburger.classList.remove('active');
@@ -59,7 +57,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Intersection Observer for fade-in animations
+// Intersection Observer for scroll animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -69,16 +67,29 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.transform = 'translateY(0) translateX(0) scale(1)';
         }
     });
 }, observerOptions);
 
-// Observe animated elements
-document.querySelectorAll('.project-card, .skill-category, .timeline-item, .education-card').forEach(el => {
+// Enhanced synthwave entrance animations
+const animatedElements = document.querySelectorAll(
+    '.project-card, .skill-category, .timeline-item, .education-card, .achievement-item, .contact-link'
+);
+
+animatedElements.forEach((el) => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.style.transition = 'opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+
+    if (el.classList.contains('timeline-item')) {
+        const isOdd = [...el.parentElement.children].indexOf(el) % 2 === 0;
+        el.style.transform = isOdd ? 'translateX(-60px)' : 'translateX(60px)';
+    } else if (el.classList.contains('achievement-item')) {
+        el.style.transform = 'scale(0.8) translateY(30px)';
+    } else {
+        el.style.transform = 'translateY(40px)';
+    }
+
     observer.observe(el);
 });
 
@@ -95,7 +106,6 @@ const counterObserver = new IntersectionObserver((entries) => {
                 function updateCounter(currentTime) {
                     const elapsed = currentTime - start;
                     const progress = Math.min(elapsed / duration, 1);
-                    // Ease out cubic
                     const eased = 1 - Math.pow(1 - progress, 3);
                     counter.textContent = Math.floor(eased * target);
                     if (progress < 1) {
@@ -115,6 +125,43 @@ const achievementsSection = document.querySelector('.achievements-grid');
 if (achievementsSection) {
     counterObserver.observe(achievementsSection);
 }
+
+// Typewriter effect for hero subtitle
+(function() {
+    const phrases = [
+        'Data Engineer',
+        'ML & GenAI Specialist',
+        'Business Consultant'
+    ];
+    const el = document.querySelector('.typewriter');
+    if (!el) return;
+    let phraseIdx = 0;
+    let charIdx = 0;
+    let deleting = false;
+
+    function tick() {
+        const current = phrases[phraseIdx];
+        if (!deleting) {
+            el.textContent = current.substring(0, charIdx + 1);
+            charIdx++;
+            if (charIdx === current.length) {
+                deleting = true;
+                setTimeout(tick, 2000);
+                return;
+            }
+            setTimeout(tick, 80);
+        } else {
+            el.textContent = current.substring(0, charIdx - 1);
+            charIdx--;
+            if (charIdx === 0) {
+                deleting = false;
+                phraseIdx = (phraseIdx + 1) % phrases.length;
+            }
+            setTimeout(tick, 40);
+        }
+    }
+    tick();
+})();
 
 // Modal functionality
 const projectCards = document.querySelectorAll('.project-card[data-modal]');

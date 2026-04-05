@@ -263,117 +263,133 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project cards will be added here -->
-                <div class="project-card" data-modal="modal-project1">
-                    <div class="project-image project-image-multi">
-                        <img src="images/Carely_final_ss_1.png" alt="Carely - AI Companion for Elderly Care">
-                        <img src="images/Carely_final_ss_2.png" alt="Carely Dashboard">
-                        <img src="images/Carely_final_ss_3.png" alt="Carely Analytics">
-                    </div>
-                    <div class="project-content">
-                        <h3>Carely — AI Companion for Elderly Care</h3>
-                        <p>Privacy-first conversational AI companion for elderly users with multi-layer memory system, PII detection guardrails, health tracking, and caregiver notifications. Features voice/text interaction and sentiment analysis for emergency detection.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">ChromaDB</span>
-                            <span class="tag">LLM</span>
+
+                <!-- Applied AI -->
+                <div class="project-category">
+                    <h3 class="category-title"><i class="fas fa-robot"></i> Applied AI</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-modal="modal-project1">
+                            <div class="project-image project-image-multi">
+                                <img src="images/Carely_final_ss_1.png" alt="Carely - AI Companion for Elderly Care">
+                                <img src="images/Carely_final_ss_2.png" alt="Carely Dashboard">
+                                <img src="images/Carely_final_ss_3.png" alt="Carely Analytics">
+                            </div>
+                            <div class="project-content">
+                                <h3>Carely — AI Companion for Elderly Care</h3>
+                                <p>Privacy-first conversational AI companion for elderly users with multi-layer memory system, PII detection guardrails, health tracking, and caregiver notifications. Features voice/text interaction and sentiment analysis for emergency detection.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">Streamlit</span>
+                                    <span class="tag">ChromaDB</span>
+                                    <span class="tag">LLM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-modal="modal-project2">
+                            <div class="project-image project-image-multi-2">
+                                <img src="images/final_demo1-project2.png" alt="Healthcare Billing Assistant">
+                                <img src="images/final_demo-project2.png" alt="Healthcare Billing Assistant Chat">
+                            </div>
+                            <div class="project-content">
+                                <h3>Healthcare Billing Assistant — RAG-Based Patient Support Chatbot</h3>
+                                <p>Production-ready RAG chatbots helping patients understand medical bills, insurance concepts, and financial assistance programs. Deployed with Groq Llama-3 (Streamlit) and Azure OpenAI (BAA-compliant) for enterprise use, reducing administrative burden and improving self-service support.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">LangChain</span>
+                                    <span class="tag">Azure OpenAI</span>
+                                    <span class="tag">RAG</span>
+                                    <span class="tag">FAISS</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-modal="modal-project2">
-                    <div class="project-image project-image-multi-2">
-                        <img src="images/final_demo1-project2.png" alt="Healthcare Billing Assistant">
-                        <img src="images/final_demo-project2.png" alt="Healthcare Billing Assistant Chat">
-                    </div>
-                    <div class="project-content">
-                        <h3>Healthcare Billing Assistant — RAG-Based Patient Support Chatbot</h3>
-                        <p>Production-ready RAG chatbots helping patients understand medical bills, insurance concepts, and financial assistance programs. Deployed with Groq Llama-3 (Streamlit) and Azure OpenAI (BAA-compliant) for enterprise use, reducing administrative burden and improving self-service support.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">LangChain</span>
-                            <span class="tag">Azure OpenAI</span>
-                            <span class="tag">RAG</span>
-                            <span class="tag">FAISS</span>
+                <!-- Data Engineering -->
+                <div class="project-category">
+                    <h3 class="category-title"><i class="fas fa-database"></i> Data Engineering</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-modal="modal-project4">
+                            <div class="project-image project-image-multi">
+                                <img src="images/project 4-architecture diagram.png" alt="YouTube Analytics Architecture">
+                                <img src="images/project 4-s3-raw.png" alt="YouTube Data Lake S3">
+                                <img src="images/project 4-s3.png" alt="YouTube ETL Pipeline">
+                            </div>
+                            <div class="project-content">
+                                <h3>YouTube Analytics Data Lake & End-to-End ETL Pipeline on AWS</h3>
+                                <p>Scalable cloud data engineering pipeline analyzing YouTube trending video data. Built data lake on S3 with ETL workflows using AWS Lambda and Glue, transforming JSON/CSV into Parquet tables for Athena SQL analysis. Dashboard visualizes trending categories and engagement metrics.</p>
+                                <div class="project-tags">
+                                    <span class="tag">AWS S3</span>
+                                    <span class="tag">AWS Glue</span>
+                                    <span class="tag">AWS Lambda</span>
+                                    <span class="tag">ETL</span>
+                                    <span class="tag">Parquet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-modal="modal-project5">
+                            <div class="project-image project-image-multi-2">
+                                <img src="images/project 5-architecture.png" alt="Airflow ETL Architecture">
+                                <img src="images/project 5-dag-results.png" alt="Airflow DAG Results">
+                            </div>
+                            <div class="project-content">
+                                <h3>Automated ETL Orchestration with Apache Airflow & AWS</h3>
+                                <p>Fully automated ETL workflow using Apache Airflow to orchestrate data pipelines across AWS services. Built modular DAGs for scheduled ingestion, transformation, and storage with monitoring, logging, and alerting for operational reliability and scalable data platforms.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Apache Airflow</span>
+                                    <span class="tag">AWS S3</span>
+                                    <span class="tag">AWS Glue</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">ETL</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-modal="modal-project3">
-                    <div class="project-image project-image-multi-2">
-                        <img src="images/project 3- results1.png" alt="LA Crime Hotspot Prediction">
-                        <img src="images/project 3-results1.png" alt="LA Crime Analysis Results">
-                    </div>
-                    <div class="project-content">
-                        <h3>LA Crime Hotspot Prediction & Anomaly Detection</h3>
-                        <p>End-to-end ML system predicting hourly crime hotspots across LA districts using 1M+ records. Automated ML lifecycle with AWS SageMaker Pipelines, achieving 93% accuracy with XGBoost. Engineered temporal, spatial, and demographic features for proactive resource allocation.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">AWS SageMaker</span>
-                            <span class="tag">XGBoost</span>
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">SMOTE</span>
+                <!-- Data Science & Analytics -->
+                <div class="project-category">
+                    <h3 class="category-title"><i class="fas fa-chart-bar"></i> Data Science & Analytics</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-modal="modal-project3">
+                            <div class="project-image project-image-multi-2">
+                                <img src="images/project 3- results1.png" alt="LA Crime Hotspot Prediction">
+                                <img src="images/project 3-results1.png" alt="LA Crime Analysis Results">
+                            </div>
+                            <div class="project-content">
+                                <h3>LA Crime Hotspot Prediction & Anomaly Detection</h3>
+                                <p>End-to-end ML system predicting hourly crime hotspots across LA districts using 1M+ records. Automated ML lifecycle with AWS SageMaker Pipelines, achieving 93% accuracy with XGBoost. Engineered temporal, spatial, and demographic features for proactive resource allocation.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">AWS SageMaker</span>
+                                    <span class="tag">XGBoost</span>
+                                    <span class="tag">TensorFlow</span>
+                                    <span class="tag">SMOTE</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="project-card" data-modal="modal-project4">
-                    <div class="project-image project-image-multi">
-                        <img src="images/project 4-architecture diagram.png" alt="YouTube Analytics Architecture">
-                        <img src="images/project 4-s3-raw.png" alt="YouTube Data Lake S3">
-                        <img src="images/project 4-s3.png" alt="YouTube ETL Pipeline">
-                    </div>
-                    <div class="project-content">
-                        <h3>YouTube Analytics Data Lake & End-to-End ETL Pipeline on AWS</h3>
-                        <p>Scalable cloud data engineering pipeline analyzing YouTube trending video data. Built data lake on S3 with ETL workflows using AWS Lambda and Glue, transforming JSON/CSV into Parquet tables for Athena SQL analysis. Dashboard visualizes trending categories and engagement metrics.</p>
-                        <div class="project-tags">
-                            <span class="tag">AWS S3</span>
-                            <span class="tag">AWS Glue</span>
-                            <span class="tag">AWS Lambda</span>
-                            <span class="tag">ETL</span>
-                            <span class="tag">Parquet</span>
+                        <div class="project-card" data-modal="modal-project6">
+                            <div class="project-image">
+                                <img src="images/project 6-dashboard.png" alt="Entertainment Industry Analytics Dashboard">
+                            </div>
+                            <div class="project-content">
+                                <h3>Lights, Data, Action — Entertainment Industry Analytics Dashboard Suite</h3>
+                                <p>Interactive Tableau dashboards analyzing Netflix, IMDb Top 1000 movies, TV shows, and Oscar awards data. Integrated and cleaned multiple datasets to uncover patterns in content performance, audience preferences, and critical recognition, supporting data-driven content investment decisions.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Tableau</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Data Modeling</span>
+                                    <span class="tag">Analytics</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card" data-modal="modal-project5">
-                    <div class="project-image project-image-multi-2">
-                        <img src="images/project 5-architecture.png" alt="Airflow ETL Architecture">
-                        <img src="images/project 5-dag-results.png" alt="Airflow DAG Results">
-                    </div>
-                    <div class="project-content">
-                        <h3>Automated ETL Orchestration with Apache Airflow & AWS</h3>
-                        <p>Fully automated ETL workflow using Apache Airflow to orchestrate data pipelines across AWS services. Built modular DAGs for scheduled ingestion, transformation, and storage with monitoring, logging, and alerting for operational reliability and scalable data platforms.</p>
-                        <div class="project-tags">
-                            <span class="tag">Apache Airflow</span>
-                            <span class="tag">AWS S3</span>
-                            <span class="tag">AWS Glue</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">ETL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-modal="modal-project6">
-                    <div class="project-image">
-                        <img src="images/project 6-dashboard.png" alt="Entertainment Industry Analytics Dashboard">
-                    </div>
-                    <div class="project-content">
-                        <h3>Lights, Data, Action — Entertainment Industry Analytics Dashboard Suite</h3>
-                        <p>Interactive Tableau dashboards analyzing Netflix, IMDb Top 1000 movies, TV shows, and Oscar awards data. Integrated and cleaned multiple datasets to uncover patterns in content performance, audience preferences, and critical recognition, supporting data-driven content investment decisions.</p>
-                        <div class="project-tags">
-                            <span class="tag">Tableau</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Data Modeling</span>
-                            <span class="tag">Analytics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 

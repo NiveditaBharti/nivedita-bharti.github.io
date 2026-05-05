@@ -3,36 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivedita Bharti | Consulting, Data & AI Portfolio</title>
+    <title>Nivedita Bharti - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="mode-recruiter">
-    <!-- Terminal boot overlay (Start Game) -->
-    <div id="terminal-boot" class="terminal-boot" aria-hidden="true" hidden>
-        <div class="terminal-boot-inner">
-            <pre class="terminal-boot-text" id="terminal-boot-lines"></pre>
-        </div>
-    </div>
-
-    <!-- Floating pickup orbs (decorative) -->
-    <div class="pixel-orbs" aria-hidden="true">
-        <span class="orb orb-a"></span>
-        <span class="orb orb-b"></span>
-        <span class="orb orb-c"></span>
-    </div>
+<body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
+            <a href="#home" class="nav-logo">NB</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#player-stats" class="nav-link">Snapshot</a></li>
-                <li><a href="#journey" class="nav-link">Experience</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#why-player" class="nav-link">Value</a></li>
-                <li><a href="#boss-battles" class="nav-link">Case Studies</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -44,67 +29,15 @@
         </div>
     </nav>
 
-    <!-- Hero Section — Player Select -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="synthwave-grid"></div>
-        <!-- Left hero: solar system + ringed planet + comet (decorative) -->
-        <div class="hero-left-atmosphere" aria-hidden="true">
-            <div class="hero-solar-system">
-                <div class="solar-system">
-                    <div class="orbit orbit-4"><span class="planet planet-mars"></span></div>
-                    <div class="orbit orbit-3"><span class="planet planet-earth"></span></div>
-                    <div class="orbit orbit-2"><span class="planet planet-venus"></span></div>
-                    <div class="orbit orbit-1"><span class="planet planet-mercury"></span></div>
-                    <div class="solar-sun"></div>
-                </div>
-            </div>
-            <div class="hero-ring-scene">
-                <div class="ringed-planet">
-                    <div class="ringed-planet-glow"></div>
-                    <div class="ringed-planet-rings"></div>
-                    <div class="ringed-planet-body"></div>
-                    <div class="ring-moon-orbit ring-moon-orbit-a"><span class="ring-moon"></span></div>
-                    <div class="ring-moon-orbit ring-moon-orbit-b"><span class="ring-moon"></span></div>
-                    <div class="ring-moon-orbit ring-moon-orbit-c"><span class="ring-moon ring-moon-sm"></span></div>
-                </div>
-            </div>
-            <div class="hero-comet"></div>
-        </div>
-        <!-- Right hero: radar sweep + orbital data nodes -->
-        <div class="hero-right-atmosphere" aria-hidden="true">
-            <div class="hero-radar">
-                <div class="radar-rings"></div>
-                <div class="radar-sweep"></div>
-                <span class="radar-blip radar-blip-a"></span>
-                <span class="radar-blip radar-blip-b"></span>
-                <span class="radar-blip radar-blip-c"></span>
-                <div class="radar-hub"></div>
-            </div>
-            <div class="hero-data-orbit">
-                <div class="data-orbit-track"></div>
-                <div class="data-orbit-nodes">
-                    <span class="data-node"></span>
-                    <span class="data-node"></span>
-                    <span class="data-node"></span>
-                    <span class="data-node"></span>
-                </div>
-                <div class="data-orbit-core"></div>
-            </div>
-            <div class="hero-shooting-star"></div>
-        </div>
-        <div class="pixel-stars" aria-hidden="true"></div>
-        <div class="hero-container dialogue-box">
-            <span class="corner corner-tl" aria-hidden="true"></span>
-            <span class="corner corner-tr" aria-hidden="true"></span>
-            <span class="corner corner-bl" aria-hidden="true"></span>
-            <span class="corner corner-br" aria-hidden="true"></span>
-            <p class="player-label">PROFILE</p>
-            <h1 class="hero-title" data-text="Nivedita Bharti">Nivedita Bharti</h1>
-            <p class="hero-tagline">Consulting, Data &amp; AI Professional | Ex-Deloitte | Cloud &amp; Analytics</p>
-            <p class="hero-value-prop">I build scalable data systems and AI products that turn complex data into business impact.</p>
+        <div class="hero-container">
+            <h1 class="hero-title">Nivedita Bharti</h1>
+            <p class="hero-subtitle"><span class="typewriter"></span></p>
             <div class="hero-cta">
-                <button type="button" class="btn btn-primary" id="start-game-btn">VIEW EXPERIENCE</button>
-                <a href="#contact" class="btn btn-secondary">CONTACT ME</a>
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -112,509 +45,372 @@
         </div>
     </section>
 
-    <!-- About — Story Mode -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">ABOUT</h2>
-            <div class="story-grid">
-                <article class="story-block game-panel">
-                    <h3 class="story-heading"><span class="story-icon">◇</span> Professional Background</h3>
-                    <p class="story-text">Engineering foundation (BIT) evolved into 6+ years of enterprise consulting—first at Cognizant building data pipelines and implementations, then at Deloitte leading digital transformation and technology engagements for Fortune-level clients.</p>
-                </article>
-                <article class="story-block game-panel">
-                    <h3 class="story-heading"><span class="story-icon">⚔</span> Current Focus</h3>
-                    <p class="story-text">MS in Information Management at UIUC while interning in Credit at Synchrony—applying analytics, data engineering, and GenAI to credit risk and operations. I ship end-to-end solutions: from requirements and architecture to models, pipelines, and stakeholder-ready insights.</p>
-                </article>
-                <article class="story-block game-panel">
-                    <h3 class="story-heading"><span class="story-icon">★</span> Career Direction</h3>
-                    <p class="story-text">Grow as a full-stack data &amp; AI leader—larger-scale platforms, production ML/LLM systems, and measurable business outcomes. Open to roles where I can bridge strategy, engineering, and delivery.</p>
-                </article>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    MS in Information Management (UIUC) student with 6+ years of consulting experience (Deloitte, Cognizant)
+                    and current Credit Intern at Synchrony. I specialize in B2B consulting, data analytics, data engineering,
+                    and applied AI/GenAI, building end-to-end pipelines and analytics solutions that turn complex data into
+                    business impact.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Recruiter snapshot: Player Stats -->
-    <section id="player-stats" class="player-stats">
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">PROFESSIONAL SNAPSHOT</h2>
-            <div class="player-stats-grid">
-                <div class="stat-card game-panel">
-                    <span class="stat-card-value"><span class="stat-counter" data-target="6" data-suffix="+">0</span></span>
-                    <span class="stat-card-label">Years Consulting Experience</span>
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Present</span>
+                        <h3>Credit Intern</h3>
+                        <h4>Synchrony</h4>
+                        <ul>
+                            <li>Applied data analytics and AI/GenAI to credit risk and business operations</li>
+                            <li>Collaborated with cross-functional teams on data-driven decision making</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="stat-card game-panel">
-                    <span class="stat-card-value"><span class="stat-counter" data-target="3" data-suffix="+">0</span></span>
-                    <span class="stat-card-label">AI / ML Projects Built</span>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Deloitte</span>
+                        <h3>Consultant / Senior Consultant</h3>
+                        <h4>Deloitte</h4>
+                        <ul>
+                            <li>Led digital transformation and technology consulting engagements for enterprise clients</li>
+                            <li>Managed stakeholder relationships and delivered executive-level reporting</li>
+                            <li>Drove process improvement and automation initiatives</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="stat-card game-panel">
-                    <span class="stat-card-icon"><i class="fas fa-project-diagram"></i></span>
-                    <span class="stat-card-label stat-card-label-wide">End-to-End Data Pipelines Delivered</span>
-                </div>
-                <div class="stat-card game-panel">
-                    <span class="stat-card-value"><span class="stat-counter" data-target="1" data-suffix="M+">0</span></span>
-                    <span class="stat-card-label">Records Scale (ML &amp; Analytics)</span>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Cognizant</span>
+                        <h3>Programmer Analyst / Technology Consultant</h3>
+                        <h4>Cognizant</h4>
+                        <ul>
+                            <li>Built end-to-end data pipelines and analytics solutions</li>
+                            <li>Delivered B2B consulting and technology implementation projects</li>
+                            <li>Collaborated in Agile/Scrum teams for enterprise software delivery</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quests + Training + Stats — single terminal -->
-    <section id="journey" class="journey">
+    <!-- Education Section -->
+    <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">JOURNEY</h2>
-            <div class="journey-tabs" role="tablist" aria-label="Career sections">
-                <button type="button" class="journey-tab active" role="tab" aria-selected="true" aria-controls="journey-panel-quests" id="tab-quests" data-journey-tab="quests">Experience</button>
-                <button type="button" class="journey-tab" role="tab" aria-selected="false" aria-controls="journey-panel-training" id="tab-training" data-journey-tab="training">Education</button>
-                <button type="button" class="journey-tab" role="tab" aria-selected="false" aria-controls="journey-panel-stats" id="tab-stats" data-journey-tab="stats">Achievements</button>
-            </div>
-            <div id="journey-panel-quests" class="journey-panel is-active" role="tabpanel" aria-labelledby="tab-quests">
-                <div class="timeline timeline-compact">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><span class="lvl-badge">3</span></div>
-                        <div class="timeline-content game-panel">
-                            <div class="timeline-company-logo">
-                                <img src="images/logos/synchrony.svg" alt="" width="200" height="40" loading="lazy" decoding="async">
-                            </div>
-                            <span class="timeline-date">CURRENT ROLE</span>
-                            <h3>Credit Intern</h3>
-                            <h4>Synchrony</h4>
-                            <ul>
-                                <li>Applied data analytics and AI/GenAI to credit risk and business operations</li>
-                                <li>Collaborated with cross-functional teams on data-driven decision making</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><span class="lvl-badge">2</span></div>
-                        <div class="timeline-content game-panel">
-                            <div class="timeline-company-logo">
-                                <img src="images/logos/deloitte.svg" alt="" width="200" height="40" loading="lazy" decoding="async">
-                            </div>
-                            <span class="timeline-date">PREVIOUS ROLE</span>
-                            <h3>Consultant / Senior Consultant</h3>
-                            <h4>Deloitte</h4>
-                            <ul>
-                                <li>Led digital transformation and technology consulting engagements for enterprise clients</li>
-                                <li>Managed stakeholder relationships and delivered executive-level reporting</li>
-                                <li>Drove process improvement and automation initiatives</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"><span class="lvl-badge">1</span></div>
-                        <div class="timeline-content game-panel">
-                            <div class="timeline-company-logo">
-                                <img src="images/logos/cognizant.svg" alt="" width="220" height="40" loading="lazy" decoding="async">
-                            </div>
-                            <span class="timeline-date">PREVIOUS ROLE</span>
-                            <h3>Programmer Analyst / Technology Consultant</h3>
-                            <h4>Cognizant</h4>
-                            <ul>
-                                <li>Built end-to-end data pipelines and analytics solutions</li>
-                                <li>Delivered B2B consulting and technology implementation projects</li>
-                                <li>Collaborated in Agile/Scrum teams for enterprise software delivery</li>
-                            </ul>
-                        </div>
-                    </div>
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Master of Science</h3>
+                    <h4>Information Management</h4>
+                    <p class="education-school">University of Illinois Urbana-Champaign (UIUC)</p>
                 </div>
-            </div>
-            <div id="journey-panel-training" class="journey-panel" role="tabpanel" aria-labelledby="tab-training" hidden>
-                <div class="education-grid education-grid-compact">
-                    <div class="education-card game-panel">
-                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <h3>Master of Science</h3>
-                        <h4>Information Management</h4>
-                        <p class="education-school">University of Illinois Urbana-Champaign (UIUC)</p>
-                    </div>
-                    <div class="education-card game-panel">
-                        <div class="education-icon"><i class="fas fa-university"></i></div>
-                        <h3>Bachelor of Engineering</h3>
-                        <h4>Engineering</h4>
-                        <p class="education-school">Birla Institute of Technology</p>
-                    </div>
-                </div>
-            </div>
-            <div id="journey-panel-stats" class="journey-panel" role="tabpanel" aria-labelledby="tab-stats" hidden>
-                <div class="achievements-grid achievements-grid-compact">
-                    <div class="achievement-item game-panel">
-                        <div class="achievement-badge"><i class="fas fa-trophy"></i></div>
-                        <span class="achievement-number" data-target="6">0</span>
-                        <span class="achievement-suffix">+</span>
-                        <p>Years XP</p>
-                    </div>
-                    <div class="achievement-item game-panel">
-                        <div class="achievement-badge"><i class="fas fa-bullseye"></i></div>
-                        <span class="achievement-number" data-target="93">0</span>
-                        <span class="achievement-suffix">%</span>
-                        <p>Accuracy</p>
-                    </div>
-                    <div class="achievement-item game-panel">
-                        <div class="achievement-badge"><i class="fas fa-flag-checkered"></i></div>
-                        <span class="achievement-number" data-target="6">0</span>
-                        <span class="achievement-suffix">+</span>
-                        <p>Projects</p>
-                    </div>
-                    <div class="achievement-item game-panel">
-                        <div class="achievement-badge"><i class="fas fa-database"></i></div>
-                        <span class="achievement-number" data-target="1">0</span>
-                        <span class="achievement-suffix">M+</span>
-                        <p>Records</p>
-                    </div>
-                </div>
-                <div class="awards-section">
-                    <h3 class="awards-title">Awards &amp; Recognition</h3>
-                    <div class="awards-grid">
-                        <article class="award-card game-panel">
-                            <h4>Incredibles of the Quarter (2018)</h4>
-                            <p class="award-org">Cognizant</p>
-                            <p>Recognized for going above and beyond core responsibilities to drive strong team and business outcomes.</p>
-                        </article>
-                        <article class="award-card game-panel">
-                            <h4>Practitioner Spotlight Award (2023)</h4>
-                            <p class="award-org">Deloitte</p>
-                            <p>Awarded for delivering exceptional results on high-stakes, high-pressure client engagements.</p>
-                        </article>
-                        <article class="award-card game-panel">
-                            <h4>Live the Dot (2023)</h4>
-                            <p class="award-org">Deloitte</p>
-                            <p>Recognized for teamwork, client-centric delivery, and consistently going above and beyond on projects.</p>
-                        </article>
-                    </div>
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-university"></i></div>
+                    <h3>Bachelor of Engineering</h3>
+                    <h4>Engineering</h4>
+                    <p class="education-school">Birla Institute of Technology</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills — Skill Tree -->
+    <!-- Key Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Key Highlights</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <span class="achievement-number" data-target="6">0</span>
+                    <span class="achievement-suffix">+</span>
+                    <p>Years Consulting Experience</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number" data-target="93">0</span>
+                    <span class="achievement-suffix">%</span>
+                    <p>ML Model Accuracy</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number" data-target="6">0</span>
+                    <span class="achievement-suffix">+</span>
+                    <p>End-to-End Projects</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number" data-target="1">0</span>
+                    <span class="achievement-suffix">M+ Records</span>
+                    <p>Processed & Analyzed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">CORE SKILLS</h2>
+            <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-grid">
-                <article class="skill-card game-panel">
-                    <div class="skill-card-head">
-                        <span class="skill-icon"><i class="fas fa-briefcase"></i></span>
-                        <h3>Business &amp; Consulting</h3>
-                        <span class="skill-lvl">Expert</span>
-                    </div>
-                    <ul class="skill-list">
-                        <li data-skill-tip="Deloitte engagements, Synchrony credit analytics, client-facing delivery"><span class="skill-line-text">Digital Transformation &amp; Technology Consulting</span> <span class="skill-bar" data-level="95"></span></li>
-                        <li data-skill-tip="Carely, Healthcare RAG, enterprise consulting"><span class="skill-line-text">Business Requirements &amp; Stakeholder Management</span> <span class="skill-bar" data-level="90"></span></li>
-                        <li data-skill-tip="Product strategy across consulting &amp; academic projects"><span class="skill-line-text">Product &amp; Strategy Analysis</span> <span class="skill-bar" data-level="85"></span></li>
-                        <li data-skill-tip="Automation initiatives at Deloitte, pipeline orchestration"><span class="skill-line-text">Process Improvement &amp; Automation</span> <span class="skill-bar" data-level="88"></span></li>
-                        <li data-skill-tip="Credit risk, crime analytics, executive dashboards"><span class="skill-line-text">Data-Driven Decision Making</span> <span class="skill-bar" data-level="92"></span></li>
+                <!-- Business & Consulting -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Business & Consulting</h3>
+                    <ul>
+                        <li>Digital Transformation & Technology Consulting</li>
+                        <li>Business Requirements Gathering & Stakeholder Management</li>
+                        <li>Product & Strategy Analysis</li>
+                        <li>Process Improvement & Automation</li>
+                        <li>Data-Driven Decision Making</li>
+                        <li>Client Communication & Executive Reporting</li>
+                        <li>Agile / Scrum Collaboration</li>
                     </ul>
-                </article>
+                </div>
 
-                <article class="skill-card game-panel">
-                    <div class="skill-card-head">
-                        <span class="skill-icon"><i class="fas fa-code"></i></span>
-                        <h3>Programming &amp; Analytics</h3>
-                        <span class="skill-lvl">Advanced</span>
-                    </div>
-                    <ul class="skill-list">
-                        <li data-skill-tip="Carely, Healthcare RAG, LA Crime, ETL pipelines, Tableau prep"><span class="skill-line-text">Python (Pandas, NumPy, Scikit-learn, TensorFlow)</span> <span class="skill-bar" data-level="92"></span></li>
-                        <li data-skill-tip="LA Crime, Athena, dashboards, warehousing"><span class="skill-line-text">SQL</span> <span class="skill-bar" data-level="90"></span></li>
-                        <li data-skill-tip="Enterprise analytics engagements"><span class="skill-line-text">SAS</span> <span class="skill-bar" data-level="70"></span></li>
-                        <li data-skill-tip="Analytics coursework &amp; exploration"><span class="skill-line-text">R</span> <span class="skill-bar" data-level="65"></span></li>
+                <!-- Programming & Analytics -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming & Analytics</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras)</li>
+                        <li>SQL</li>
+                        <li>SAS</li>
+                        <li>R</li>
                     </ul>
-                </article>
+                </div>
 
-                <article class="skill-card game-panel">
-                    <div class="skill-card-head">
-                        <span class="skill-icon"><i class="fas fa-database"></i></span>
-                        <h3>Data Engineering</h3>
-                        <span class="skill-lvl">Advanced</span>
-                    </div>
-                    <ul class="skill-list">
-                        <li data-skill-tip="YouTube Data Lake, Airflow ETL, LA Crime (SageMaker/S3)"><span class="skill-line-text">AWS Data Stack (S3, Glue, Redshift, Lambda)</span> <span class="skill-bar" data-level="88"></span></li>
-                        <li data-skill-tip="Airflow &amp; AWS orchestration project"><span class="skill-line-text">Airflow</span> <span class="skill-bar" data-level="82"></span></li>
-                        <li data-skill-tip="Large-scale ETL &amp; Spark patterns"><span class="skill-line-text">PySpark</span> <span class="skill-bar" data-level="78"></span></li>
-                        <li data-skill-tip="Analytics engineering patterns"><span class="skill-line-text">dbt</span> <span class="skill-bar" data-level="72"></span></li>
-                        <li data-skill-tip="YouTube lake, Airflow DAGs, consulting pipelines"><span class="skill-line-text">ETL/ELT Pipelines</span> <span class="skill-bar" data-level="90"></span></li>
+                <!-- Data Engineering -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Engineering</h3>
+                    <ul>
+                        <li>AWS (S3, Glue, Redshift, Lambda)</li>
+                        <li>Databricks</li>
+                        <li>Airflow</li>
+                        <li>PySpark</li>
+                        <li>dbt</li>
+                        <li>ETL/ELT Pipelines</li>
+                        <li>Data Modeling & Warehousing</li>
                     </ul>
-                </article>
+                </div>
 
-                <article class="skill-card game-panel">
-                    <div class="skill-card-head">
-                        <span class="skill-icon"><i class="fas fa-brain"></i></span>
-                        <h3>ML &amp; GenAI</h3>
-                        <span class="skill-lvl">Advanced</span>
-                    </div>
-                    <ul class="skill-list">
-                        <li data-skill-tip="LA Crime (XGBoost), crime prediction pipeline"><span class="skill-line-text">Machine Learning (XGBoost, LSTM, etc.)</span> <span class="skill-bar" data-level="85"></span></li>
-                        <li data-skill-tip="Healthcare Billing RAG assistant"><span class="skill-line-text">LangChain</span> <span class="skill-bar" data-level="82"></span></li>
-                        <li data-skill-tip="Healthcare RAG, document retrieval"><span class="skill-line-text">LlamaIndex</span> <span class="skill-bar" data-level="78"></span></li>
-                        <li data-skill-tip="Enterprise BAA-compliant RAG variant"><span class="skill-line-text">Azure OpenAI</span> <span class="skill-bar" data-level="80"></span></li>
-                        <li data-skill-tip="Carely memory, Healthcare billing knowledge bots"><span class="skill-line-text">RAG Pipelines</span> <span class="skill-bar" data-level="88"></span></li>
+                <!-- BI & Visualization -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>BI & Visualization</h3>
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>EazyBI</li>
                     </ul>
-                </article>
+                </div>
 
-                <article class="skill-card game-panel">
-                    <div class="skill-card-head">
-                        <span class="skill-icon"><i class="fas fa-cloud"></i></span>
-                        <h3>Cloud &amp; Platforms</h3>
-                        <span class="skill-lvl">Advanced</span>
-                    </div>
-                    <ul class="skill-list">
-                        <li data-skill-tip="YouTube lake, Airflow, LA Crime infrastructure"><span class="skill-line-text">AWS</span> <span class="skill-bar" data-level="88"></span></li>
-                        <li data-skill-tip="Enterprise implementations"><span class="skill-line-text">Oracle Cloud</span> <span class="skill-bar" data-level="74"></span></li>
-                        <li data-skill-tip="CRM consulting and enterprise implementations"><span class="skill-line-text">Salesforce CRM</span> <span class="skill-bar" data-level="76"></span></li>
-                        <li data-skill-tip="Marketing operations and campaign platforms"><span class="skill-line-text">Salesforce Marketing Cloud</span> <span class="skill-bar" data-level="72"></span></li>
-                        <li data-skill-tip="Azure OpenAI healthcare deployment"><span class="skill-line-text">Microsoft Azure (AI Foundry)</span> <span class="skill-bar" data-level="78"></span></li>
+                <!-- ML & GenAI -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>ML & GenAI</h3>
+                    <ul>
+                        <li>Machine Learning (Regression, Classification, XGBoost, LSTM)</li>
+                        <li>LangChain</li>
+                        <li>LlamaIndex</li>
+                        <li>Azure OpenAI</li>
+                        <li>Retrieval-Augmented Generation (RAG)</li>
+                        <li>Vector Databases (Chroma, FAISS)</li>
+                        <li>Prompt Engineering</li>
                     </ul>
-                </article>
+                </div>
+
+                <!-- Cloud & Platforms -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & Platforms</h3>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Microsoft Azure (AI Foundry)</li>
+                        <li>GitHub</li>
+                        <li>Salesforce</li>
+                        <li>Oracle Cloud</li>
+                        <li>Microsoft Dynamics 365</li>
+                        <li>Oracle NetSuite</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Frameworks</h3>
+                    <ul>
+                        <li>Jira</li>
+                        <li>Confluence</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Why pick this player -->
-    <section id="why-player" class="why-player">
-        <div class="container">
-            <h2 class="section-title">VALUE I BRING</h2>
-            <ul class="why-list game-panel">
-                <li><span class="why-bullet">&gt;</span> <strong>Business + tech bridge:</strong> Consulting background with hands-on engineering—I translate stakeholder goals into pipelines, models, and shipped software.</li>
-                <li><span class="why-bullet">&gt;</span> <strong>Enterprise exposure:</strong> Delivered for large clients at Deloitte and Cognizant; comfortable in regulated, high-stakes environments.</li>
-                <li><span class="why-bullet">&gt;</span> <strong>Builder, not slideware:</strong> Multiple end-to-end AI and data engineering projects—from architecture diagrams to working demos.</li>
-                <li><span class="why-bullet">&gt;</span> <strong>Communication &amp; leadership:</strong> Executive reporting, cross-functional collaboration, and clear documentation for both technical and business audiences.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Boss Battles — highlight case studies -->
-    <section id="boss-battles" class="boss-battles">
-        <div class="container">
-            <h2 class="section-title">SELECT PROJECT HIGHLIGHTS</h2>
-            <div class="boss-grid">
-                <article class="boss-card game-panel">
-                    <span class="boss-badge">Cloud Transformation</span>
-                    <h3 class="boss-title">Scaling Data Pipelines on AWS</h3>
-                    <p class="boss-problem"><strong>Problem:</strong> Trending video data needed reliable ingestion, transformation, and queryable storage for analytics—not one-off scripts.</p>
-                    <p class="boss-tools"><strong>Tools:</strong> S3, AWS Glue, Lambda, Parquet, Athena, Python</p>
-                    <p class="boss-outcome"><strong>Outcome:</strong> Repeatable ETL into a data-lake pattern with SQL-ready tables and a path to dashboarding—demonstrates production-style cloud DE thinking.</p>
-                </article>
-                <article class="boss-card game-panel">
-                    <span class="boss-badge">GenAI Transformation</span>
-                    <h3 class="boss-title">Production-Grade RAG for Healthcare</h3>
-                    <p class="boss-problem"><strong>Problem:</strong> Patients struggle to understand bills and assistance programs; support teams need scalable, accurate answers from policy docs.</p>
-                    <p class="boss-tools"><strong>Tools:</strong> Python, LangChain, vector DBs, Groq / Azure OpenAI, Streamlit</p>
-                    <p class="boss-outcome"><strong>Outcome:</strong> Dual deployment (Streamlit + BAA-minded Azure path), reduced support dependency, and a template for compliant enterprise GenAI.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects — Missions -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">PROJECT PORTFOLIO</h2>
+            <h2 class="section-title">Featured Projects</h2>
 
-            <details class="project-category-accordion" open>
-                <summary class="category-title"><i class="fas fa-dragon"></i> Applied AI</summary>
-                <div class="projects-grid">
-                    <article class="project-card game-panel">
-                        <div class="project-preview project-image project-image-multi" data-modal="modal-project1" role="button" tabindex="0" aria-label="Open project overview: Carely">
-                            <img src="images/Carely_final_ss_1.png" alt="Carely - AI Companion for Elderly Care">
-                            <img src="images/Carely_final_ss_2.png" alt="Carely Dashboard">
-                            <img src="images/Carely_final_ss_3.png" alt="Carely Analytics">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-heading">
-                                <button type="button" class="project-title-btn" data-modal="modal-project1">Carely — AI Companion for Elderly Care</button>
-                            </h3>
-                            <p class="project-blurb">Privacy-first conversational AI companion for elderly users with multi-layer memory system, PII detection guardrails, health tracking, and caregiver notifications. Features voice/text interaction and sentiment analysis for emergency detection.</p>
-                            <p class="powerups-label">TECH STACK:</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">FastAPI</span>
-                                <span class="tag">Streamlit</span>
-                                <span class="tag">ChromaDB</span>
-                                <span class="tag">LLM</span>
+                <!-- Applied AI -->
+                <div class="project-category">
+                    <h3 class="category-title"><i class="fas fa-robot"></i> Applied AI</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-modal="modal-project1">
+                            <div class="project-image project-image-multi">
+                                <img src="images/Carely_final_ss_1.png" alt="Carely - AI Companion for Elderly Care">
+                                <img src="images/Carely_final_ss_2.png" alt="Carely Dashboard">
+                                <img src="images/Carely_final_ss_3.png" alt="Carely Analytics">
                             </div>
-                            <div class="project-actions">
-                                <!-- Live demo: replace # with your Streamlit / HF Spaces / other hosted app URL -->
-                                <a href="#" class="project-action project-action-demo" target="_blank" rel="noopener noreferrer" title="Replace href in index.html with your live demo URL (e.g. Streamlit Cloud)">View Demo</a>
-                                <a href="https://github.com/nivedita-bharti/Carely" class="project-action" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <button type="button" class="project-action project-action-primary" data-modal="modal-project1">Architecture</button>
+                            <div class="project-content">
+                                <h3>Carely Ã¢â‚¬â€ AI Companion for Elderly Care</h3>
+                                <p>Privacy-first conversational AI companion for elderly users with multi-layer memory system, PII detection guardrails, health tracking, and caregiver notifications. Features voice/text interaction and sentiment analysis for emergency detection.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">Streamlit</span>
+                                    <span class="tag">ChromaDB</span>
+                                    <span class="tag">LLM</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
 
-                    <article class="project-card game-panel">
-                        <div class="project-preview project-image project-image-multi-2" data-modal="modal-project2" role="button" tabindex="0" aria-label="Open project overview: Healthcare Billing Assistant">
-                            <img src="images/final_demo1-project2.png" alt="Healthcare Billing Assistant">
-                            <img src="images/final_demo-project2.png" alt="Healthcare Billing Assistant Chat">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-heading">
-                                <button type="button" class="project-title-btn" data-modal="modal-project2">Healthcare Billing Assistant — RAG Chatbot</button>
-                            </h3>
-                            <p class="project-blurb">Production-ready RAG chatbots helping patients understand medical bills, insurance concepts, and financial assistance programs. Deployed with Groq Llama-3 (Streamlit) and Azure OpenAI (BAA-compliant) for enterprise use.</p>
-                            <p class="powerups-label">TECH STACK:</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">LangChain</span>
-                                <span class="tag">Azure OpenAI</span>
-                                <span class="tag">RAG</span>
-                                <span class="tag">FAISS</span>
+                        <div class="project-card" data-modal="modal-project2">
+                            <div class="project-image project-image-multi-2">
+                                <img src="images/final_demo1-project2.png" alt="Healthcare Billing Assistant">
+                                <img src="images/final_demo-project2.png" alt="Healthcare Billing Assistant Chat">
                             </div>
-                            <div class="project-actions">
-                                <a href="#" class="project-action project-action-demo" target="_blank" rel="noopener noreferrer" title="Replace href in index.html with your live demo URL (e.g. Streamlit Cloud)">View Demo</a>
-                                <a href="https://github.com/nivedita-bharti/Healthcare-Billing-RAG-Chatbot" class="project-action" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <button type="button" class="project-action project-action-primary" data-modal="modal-project2">Architecture</button>
+                            <div class="project-content">
+                                <h3>Healthcare Billing Assistant Ã¢â‚¬â€ RAG-Based Patient Support Chatbot</h3>
+                                <p>Production-ready RAG chatbots helping patients understand medical bills, insurance concepts, and financial assistance programs. Deployed with Groq Llama-3 (Streamlit) and Azure OpenAI (BAA-compliant) for enterprise use, reducing administrative burden and improving self-service support.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">LangChain</span>
+                                    <span class="tag">Azure OpenAI</span>
+                                    <span class="tag">RAG</span>
+                                    <span class="tag">FAISS</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
-            </details>
 
-            <details class="project-category-accordion">
-                <summary class="category-title"><i class="fas fa-dungeon"></i> Data Engineering</summary>
-                <div class="projects-grid">
-                    <article class="project-card game-panel">
-                        <div class="project-preview project-image project-image-multi" data-modal="modal-project4" role="button" tabindex="0" aria-label="Open project overview: YouTube Analytics Data Lake">
-                            <img src="images/project 4-architecture diagram.png" alt="YouTube Analytics Architecture">
-                            <img src="images/project 4-s3-raw.png" alt="YouTube Data Lake S3">
-                            <img src="images/project 4-s3.png" alt="YouTube ETL Pipeline">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-heading">
-                                <button type="button" class="project-title-btn" data-modal="modal-project4">YouTube Analytics Data Lake &amp; ETL Pipeline on AWS</button>
-                            </h3>
-                            <p class="project-blurb">Scalable cloud data engineering pipeline analyzing YouTube trending video data. Built data lake on S3 with ETL workflows using AWS Lambda and Glue, transforming JSON/CSV into Parquet tables for Athena SQL analysis.</p>
-                            <p class="powerups-label">TECH STACK:</p>
-                            <div class="project-tags">
-                                <span class="tag">AWS S3</span>
-                                <span class="tag">AWS Glue</span>
-                                <span class="tag">AWS Lambda</span>
-                                <span class="tag">ETL</span>
-                                <span class="tag">Parquet</span>
+                <!-- Data Engineering -->
+                <div class="project-category">
+                    <h3 class="category-title"><i class="fas fa-database"></i> Data Engineering</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-modal="modal-project4">
+                            <div class="project-image project-image-multi">
+                                <img src="images/project 4-architecture diagram.png" alt="YouTube Analytics Architecture">
+                                <img src="images/project 4-s3-raw.png" alt="YouTube Data Lake S3">
+                                <img src="images/project 4-s3.png" alt="YouTube ETL Pipeline">
                             </div>
-                            <div class="project-actions project-actions--no-demo">
-                                <a href="https://github.com/nivedita-bharti/YouTube-Analytics-Data-Lake-AWS" class="project-action" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <button type="button" class="project-action project-action-primary" data-modal="modal-project4">Architecture</button>
+                            <div class="project-content">
+                                <h3>YouTube Analytics Data Lake & End-to-End ETL Pipeline on AWS</h3>
+                                <p>Scalable cloud data engineering pipeline analyzing YouTube trending video data. Built data lake on S3 with ETL workflows using AWS Lambda and Glue, transforming JSON/CSV into Parquet tables for Athena SQL analysis. Dashboard visualizes trending categories and engagement metrics.</p>
+                                <div class="project-tags">
+                                    <span class="tag">AWS S3</span>
+                                    <span class="tag">AWS Glue</span>
+                                    <span class="tag">AWS Lambda</span>
+                                    <span class="tag">ETL</span>
+                                    <span class="tag">Parquet</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
 
-                    <article class="project-card game-panel">
-                        <div class="project-preview project-image project-image-multi-2" data-modal="modal-project5" role="button" tabindex="0" aria-label="Open project overview: Airflow ETL">
-                            <img src="images/project 5-architecture.png" alt="Airflow ETL Architecture">
-                            <img src="images/project 5-dag-results.png" alt="Airflow DAG Results">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-heading">
-                                <button type="button" class="project-title-btn" data-modal="modal-project5">Automated ETL Orchestration with Airflow &amp; AWS</button>
-                            </h3>
-                            <p class="project-blurb">Fully automated ETL workflow using Apache Airflow to orchestrate data pipelines across AWS services. Built modular DAGs for scheduled ingestion, transformation, and storage with monitoring and alerting.</p>
-                            <p class="powerups-label">TECH STACK:</p>
-                            <div class="project-tags">
-                                <span class="tag">Airflow</span>
-                                <span class="tag">AWS S3</span>
-                                <span class="tag">AWS Glue</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">ETL</span>
+                        <div class="project-card" data-modal="modal-project5">
+                            <div class="project-image project-image-multi-2">
+                                <img src="images/project 5-architecture.png" alt="Airflow ETL Architecture">
+                                <img src="images/project 5-dag-results.png" alt="Airflow DAG Results">
                             </div>
-                            <div class="project-actions project-actions--no-demo">
-                                <a href="https://github.com/nivedita-bharti/Airflow-ETL-AWS" class="project-action" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <button type="button" class="project-action project-action-primary" data-modal="modal-project5">Architecture</button>
+                            <div class="project-content">
+                                <h3>Automated ETL Orchestration with Apache Airflow & AWS</h3>
+                                <p>Fully automated ETL workflow using Apache Airflow to orchestrate data pipelines across AWS services. Built modular DAGs for scheduled ingestion, transformation, and storage with monitoring, logging, and alerting for operational reliability and scalable data platforms.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Apache Airflow</span>
+                                    <span class="tag">AWS S3</span>
+                                    <span class="tag">AWS Glue</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">ETL</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
-            </details>
 
-            <details class="project-category-accordion">
-                <summary class="category-title"><i class="fas fa-scroll"></i> Data Science &amp; Analytics</summary>
-                <div class="projects-grid">
-                    <article class="project-card game-panel">
-                        <div class="project-preview project-image project-image-multi-2" data-modal="modal-project3" role="button" tabindex="0" aria-label="Open project overview: LA Crime Hotspot">
-                            <img src="images/project 3- results1.png" alt="LA Crime Hotspot Prediction">
-                            <img src="images/project 3-results1.png" alt="LA Crime Analysis Results">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-heading">
-                                <button type="button" class="project-title-btn" data-modal="modal-project3">LA Crime Hotspot Prediction &amp; Anomaly Detection</button>
-                            </h3>
-                            <p class="project-blurb">End-to-end ML system predicting hourly crime hotspots across LA districts using 1M+ records. Automated ML lifecycle with AWS SageMaker, achieving 93% accuracy with XGBoost.</p>
-                            <p class="powerups-label">TECH STACK:</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">SageMaker</span>
-                                <span class="tag">XGBoost</span>
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">SMOTE</span>
+                <!-- Data Science & Analytics -->
+                <div class="project-category">
+                    <h3 class="category-title"><i class="fas fa-chart-bar"></i> Data Science & Analytics</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-modal="modal-project3">
+                            <div class="project-image project-image-multi-2">
+                                <img src="images/project 3- results1.png" alt="LA Crime Hotspot Prediction">
+                                <img src="images/project 3-results1.png" alt="LA Crime Analysis Results">
                             </div>
-                            <div class="project-actions project-actions--no-demo">
-                                <a href="https://github.com/nivedita-bharti/LA-Crime-Hotspot-Prediction" class="project-action" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <button type="button" class="project-action project-action-primary" data-modal="modal-project3">Architecture</button>
+                            <div class="project-content">
+                                <h3>LA Crime Hotspot Prediction & Anomaly Detection</h3>
+                                <p>End-to-end ML system predicting hourly crime hotspots across LA districts using 1M+ records. Automated ML lifecycle with AWS SageMaker Pipelines, achieving 93% accuracy with XGBoost. Engineered temporal, spatial, and demographic features for proactive resource allocation.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">AWS SageMaker</span>
+                                    <span class="tag">XGBoost</span>
+                                    <span class="tag">TensorFlow</span>
+                                    <span class="tag">SMOTE</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
 
-                    <article class="project-card game-panel">
-                        <div class="project-preview project-image" data-modal="modal-project6" role="button" tabindex="0" aria-label="Open project overview: Entertainment Analytics">
-                            <img src="images/project 6-dashboard.png" alt="Entertainment Industry Analytics Dashboard">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-heading">
-                                <button type="button" class="project-title-btn" data-modal="modal-project6">Lights, Data, Action — Entertainment Analytics Dashboard</button>
-                            </h3>
-                            <p class="project-blurb">Interactive Tableau dashboards analyzing Netflix, IMDb Top 1000 movies, TV shows, and Oscar awards data. Uncovers patterns in content performance and audience preferences.</p>
-                            <p class="powerups-label">TECH STACK:</p>
-                            <div class="project-tags">
-                                <span class="tag">Tableau</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">Analytics</span>
+                        <div class="project-card" data-modal="modal-project6">
+                            <div class="project-image">
+                                <img src="images/project 6-dashboard.png" alt="Entertainment Industry Analytics Dashboard">
                             </div>
-                            <div class="project-actions project-actions--no-demo">
-                                <a href="https://github.com/nivedita-bharti/Entertainment-Analytics-Dashboard" class="project-action" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <button type="button" class="project-action project-action-primary" data-modal="modal-project6">Architecture</button>
+                            <div class="project-content">
+                                <h3>Lights, Data, Action Ã¢â‚¬â€ Entertainment Industry Analytics Dashboard Suite</h3>
+                                <p>Interactive Tableau dashboards analyzing Netflix, IMDb Top 1000 movies, TV shows, and Oscar awards data. Integrated and cleaned multiple datasets to uncover patterns in content performance, audience preferences, and critical recognition, supporting data-driven content investment decisions.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Tableau</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Data Modeling</span>
+                                    <span class="tag">Analytics</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
-            </details>
         </div>
     </section>
 
-    <!-- Contact — Join the Party -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="underwater-scene" aria-hidden="true">
-            <div class="underwater-caustics"></div>
-            <div class="underwater-depth"></div>
-            <div class="underwater-bubbles">
-                <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
-                <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
-                <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
-                <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
-            </div>
-            <div class="fish fish-a"></div>
-            <div class="fish fish-b"></div>
-        </div>
-        <div class="container contact-inner">
-            <h2 class="section-title">GET IN TOUCH</h2>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <p class="contact-text">Open to full-time roles, internships, and collaborations. Prefer email or LinkedIn for fastest response.</p>
-                <div class="contact-cta-row">
-                    <a href="resume.pdf" class="btn btn-primary contact-cta-btn" download>Download Resume</a>
-                    <a href="https://calendly.com/" class="btn btn-secondary contact-cta-btn" target="_blank" rel="noopener noreferrer">Book a Call</a>
-                </div>
-                <p class="contact-social-label">Connect</p>
-                <div class="contact-links contact-links-featured">
-                    <a href="https://www.linkedin.com/in/nivedita-bharti-57832931/" target="_blank" rel="noopener noreferrer" class="contact-link contact-link-hero game-panel">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn — Primary</span>
-                    </a>
-                    <a href="https://github.com/nivedita-bharti" target="_blank" rel="noopener noreferrer" class="contact-link contact-link-hero game-panel">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub — Code</span>
-                    </a>
-                </div>
+                <p class="contact-text">I'm always open to discussing new opportunities, collaborations, or interesting projects.</p>
                 <div class="contact-links">
-                    <a href="mailto:niveditabharti94@gmail.com" class="contact-link game-panel">
+                    <a href="mailto:niveditabharti94@gmail.com" class="contact-link">
                         <i class="fas fa-envelope"></i>
                         <span>niveditabharti94@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nivedita-bharti-57832931/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="https://github.com/nivedita-bharti" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Profile</span>
                     </a>
                 </div>
             </div>
@@ -626,36 +422,41 @@
         <p>&copy; 2026 Nivedita Bharti. All rights reserved.</p>
     </footer>
 
-    <!-- Project modals: Problem, Approach, Tech Stack, Impact -->
+    <!-- Project Modals -->
     <div id="modal-project1" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <h2>PROJECT OVERVIEW: Carely — AI Companion</h2>
+            <h2>Carely Ã¢â‚¬â€ AI Companion for Elderly Care</h2>
             <div class="modal-images">
                 <img src="images/Carely_final_ss_1.png" alt="Carely Interface">
                 <img src="images/Carely_final_ss_2.png" alt="Carely Dashboard">
                 <img src="images/Carely_final_ss_3.png" alt="Carely Analytics">
             </div>
             <div class="modal-body">
-                <h3 class="modal-kicker">Problem</h3>
-                <p>Elderly users need an accessible, trustworthy conversational companion for daily support; caregivers need timely alerts when risk signals appear—without exposing sensitive PII.</p>
-                <h3 class="modal-kicker">Approach</h3>
-                <p>Built a privacy-first architecture: multi-layer memory (short, long, episodic, profile), strict PII detection/redaction, FastAPI services for reminders and detection, Streamlit UI with voice/text, Telegram notifications for emergencies, and pilot-driven iteration.</p>
-                <h3 class="modal-kicker">Tech Stack</h3>
+                <h3>Project Overview</h3>
+                <p>Designed and built a privacy-first, empathetic conversational AI companion to support elderly users with daily routines, health tracking, emotional check-ins, and caregiver communication.</p>
+
+                <h3>Key Features & Achievements</h3>
+                <ul>
+                    <li>Architected a multi-layer memory system with four distinct memory layers (short-term, long-term, episodic, and user-profile memory) to enable contextual, personalized conversations over time</li>
+                    <li>Implemented strict PII detection and redaction guardrails to prevent sensitive information from being stored or exposed, ensuring responsible and secure AI usage</li>
+                    <li>Developed a modular backend using Python and FastAPI, integrating scheduled reminders (APScheduler), sentiment and emergency detection, and role-based user authentication</li>
+                    <li>Built an accessible Streamlit front-end supporting voice and text interaction, optimized for non-technical and elderly users</li>
+                    <li>Integrated Telegram-based caregiver notifications to automatically alert caregivers during potential emergencies or concerning emotional states</li>
+                    <li>Validated usability through pilot testing, demonstrating strong engagement and the feasibility of an empathetic AI companion for assistive care</li>
+                </ul>
+
+                <h3>Technology Stack</h3>
                 <table class="tech-table">
                     <tr><td><strong>Frontend</strong></td><td>Streamlit, Plotly, streamlit-mic-recorder</td></tr>
                     <tr><td><strong>Backend</strong></td><td>FastAPI, APScheduler</td></tr>
                     <tr><td><strong>Database</strong></td><td>SQLite + SQLModel</td></tr>
                     <tr><td><strong>Vector Store</strong></td><td>ChromaDB</td></tr>
-                    <tr><td><strong>AI Model</strong></td><td>Groq API — Llama-3.3-70b-versatile</td></tr>
+                    <tr><td><strong>AI Model</strong></td><td>Groq API Ã¢â‚¬â€ Llama-3.3-70b-versatile</td></tr>
                     <tr><td><strong>Notifications</strong></td><td>Telegram Bot API</td></tr>
-                    <tr><td><strong>Voice</strong></td><td>gTTS</td></tr>
+                    <tr><td><strong>Voice Output</strong></td><td>gTTS</td></tr>
+                    <tr><td><strong>Utilities</strong></td><td>Requests, NumPy, Scikit-learn</td></tr>
                 </table>
-                <h3 class="modal-kicker">Impact</h3>
-                <ul class="modal-impact-list">
-                    <li>Demonstrates production-minded GenAI: guardrails, memory design, and ops hooks (scheduling, alerts)—not just a chat demo.</li>
-                    <li>Pilot feedback indicated strong engagement; positions you as someone who ships humane, safety-aware AI products.</li>
-                </ul>
             </div>
         </div>
     </div>
@@ -663,23 +464,26 @@
     <div id="modal-project2" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <h2>PROJECT OVERVIEW: Healthcare Billing Assistant</h2>
+            <h2>Healthcare Billing Assistant Ã¢â‚¬â€ RAG-Based Patient Support Chatbot</h2>
             <div class="modal-images">
                 <img src="images/final_demo1-project2.png" alt="Healthcare Billing Assistant">
                 <img src="images/final_demo-project2.png" alt="Healthcare Billing Chat">
             </div>
             <div class="modal-body">
-                <h3 class="modal-kicker">Problem</h3>
-                <p>Patients face confusing bills and eligibility rules; call centers are expensive. The client needed accurate, grounded self-service answers from policy and program documents.</p>
-                <h3 class="modal-kicker">Approach</h3>
-                <p>Implemented full RAG pipelines with curated corpora, vector retrieval (FAISS/Chroma), and two deployment tracks: fast Streamlit + Groq for iteration, and Azure OpenAI for enterprise/BAA-aligned needs. Emphasis on citation-ready retrieval and maintainable prompts.</p>
-                <h3 class="modal-kicker">Tech Stack</h3>
-                <p>Python, LangChain, LlamaIndex, Groq Llama-3, Azure OpenAI, Streamlit, FAISS, Chroma, RAG pipelines</p>
-                <h3 class="modal-kicker">Impact</h3>
-                <ul class="modal-impact-list">
-                    <li>Reduces support load and improves billing transparency for patients.</li>
-                    <li>Shows ability to deliver both a rapid prototype and an enterprise-grade AI path—critical for recruiter conversations.</li>
+                <h3>Project Overview</h3>
+                <p>Built Retrieval-Augmented Generation (RAG) chatbots to help patients understand medical bills, insurance concepts, financial assistance programs, and application processes for a healthcare revenue services client.</p>
+
+                <h3>Key Features & Achievements</h3>
+                <ul>
+                    <li>The system retrieves answers from curated policy documents and knowledge bases, reducing reliance on human support and improving response accuracy</li>
+                    <li>Developed two production-ready versions: one using Groq Llama-3 deployed via Streamlit, and another using Azure OpenAI (BAA-compliant) for enterprise deployment</li>
+                    <li>The solution improves self-service support, increases transparency in billing inquiries, and reduces administrative burden on support teams</li>
+                    <li>Implemented RAG pipelines with vector database integration for efficient document retrieval and context-aware responses</li>
+                    <li>Built as part of a semester-wide consulting project for a healthcare revenue services client</li>
                 </ul>
+
+                <h3>Technology Stack</h3>
+                <p><strong>Technologies:</strong> Python, LangChain, LlamaIndex, Groq Llama-3, Azure OpenAI, Streamlit, FAISS, Chroma, Prompt Engineering, RAG Pipelines</p>
             </div>
         </div>
     </div>
@@ -687,23 +491,26 @@
     <div id="modal-project3" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <h2>PROJECT OVERVIEW: LA Crime Hotspot Prediction</h2>
+            <h2>LA Crime Hotspot Prediction & Anomaly Detection (2020Ã¢â‚¬â€œ2023)</h2>
             <div class="modal-images">
                 <img src="images/project 3- results1.png" alt="LA Crime Prediction Results">
                 <img src="images/project 3-results1.png" alt="LA Crime Analysis">
             </div>
             <div class="modal-body">
-                <h3 class="modal-kicker">Problem</h3>
-                <p>Law enforcement and analysts need early warning of high-risk crime hotspots across districts and time windows, using over 1M historical records without manual ad-hoc modeling.</p>
-                <h3 class="modal-kicker">Approach</h3>
-                <p>End-to-end ML: rich feature engineering (temporal, spatial, lag, weather, demographics), class imbalance handling (SMOTE), model comparison, and SageMaker Pipelines for repeatable training and deployment. Added anomaly detection for unusual patterns.</p>
-                <h3 class="modal-kicker">Tech Stack</h3>
-                <p>Python, SQL, AWS SageMaker, S3, XGBoost, Random Forest, TensorFlow/Keras, Scikit-learn, SMOTE</p>
-                <h3 class="modal-kicker">Impact</h3>
-                <ul class="modal-impact-list">
-                    <li><strong>93% accuracy</strong> with XGBoost; pragmatic F1 tradeoffs documented for hotspot class.</li>
-                    <li>Shows you can own the full lifecycle on real-scale tabular data—not notebook-only experiments.</li>
+                <h3>Project Overview</h3>
+                <p>Built an end-to-end machine learning system to predict hourly crime hotspots across Los Angeles policing districts using over 1M historical crime records.</p>
+
+                <h3>Key Features & Achievements</h3>
+                <ul>
+                    <li>Engineered temporal, spatial, lag-based, weather, and demographic features and formulated hotspot detection as a supervised binary classification problem</li>
+                    <li>Automated the full ML lifecycle using AWS SageMaker Pipelines, including preprocessing, feature engineering, training, evaluation, and model registration</li>
+                    <li>The best-performing XGBoost model (with SMOTE and threshold tuning) achieved 93% accuracy with a balanced hotspot F1-score of 50%</li>
+                    <li>Enables proactive resource allocation and improved public safety planning for law enforcement agencies</li>
+                    <li>Implemented anomaly detection algorithms to identify unusual crime patterns and emerging hotspots</li>
                 </ul>
+
+                <h3>Technology Stack</h3>
+                <p><strong>Technologies:</strong> Python, SQL, AWS SageMaker, S3, XGBoost, Random Forest, TensorFlow/Keras, Scikit-learn, SMOTE, Pandas, NumPy, Matplotlib, Seaborn</p>
             </div>
         </div>
     </div>
@@ -711,24 +518,42 @@
     <div id="modal-project4" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <h2>PROJECT OVERVIEW: YouTube Analytics Data Lake</h2>
+            <h2>YouTube Analytics Data Lake & End-to-End ETL Pipeline on AWS</h2>
             <div class="modal-images">
                 <img src="images/project 4-architecture diagram.png" alt="Architecture">
                 <img src="images/project 4-s3-raw.png" alt="S3 Raw Data">
                 <img src="images/project 4-s3.png" alt="S3 Processed">
             </div>
             <div class="modal-body">
-                <h3 class="modal-kicker">Problem</h3>
-                <p>Large volumes of semi-structured trending video data required a reliable lakehouse-style path from raw ingest to analytics-ready tables—not fragile manual exports.</p>
-                <h3 class="modal-kicker">Approach</h3>
-                <p>Designed S3 zones, Glue/Lambda transforms, Parquet as the analytical format, and Athena for SQL access. Emphasized modularity so new feeds can follow the same pattern.</p>
-                <h3 class="modal-kicker">Tech Stack</h3>
-                <p>Python, SQL, AWS S3, AWS Glue, AWS Lambda, AWS Athena, Pandas, Apache Parquet, ETL pipelines</p>
-                <h3 class="modal-kicker">Impact</h3>
-                <ul class="modal-impact-list">
-                    <li>Demonstrates classic cloud DE skills recruiters search for: lake design, serverless ETL, and cost-aware storage formats.</li>
-                    <li>Supports BI-style questions on engagement and categories via repeatable SQL.</li>
+                <h3>Project Overview</h3>
+                <p>Built an end-to-end cloud data engineering pipeline to analyze YouTube trending video data and identify factors driving video popularity.</p>
+
+                <h3>Key Features & Achievements</h3>
+                <ul>
+                    <li>Designed a scalable data lake on Amazon S3, ingested structured CSV and semi-structured JSON data</li>
+                    <li>Implemented ETL workflows to transform raw data into analytics-ready Parquet tables</li>
+                    <li>Used AWS Lambda and AWS Glue to clean, normalize, catalog, and convert JSON data into tabular formats</li>
+                    <li>Enabled SQL-based analysis in Amazon Athena for business intelligence queries</li>
+                    <li>Built an interactive dashboard to visualize trending categories, engagement metrics, and regional patterns</li>
+                    <li>Demonstrates how cloud-based data pipelines support data-driven marketing decisions</li>
                 </ul>
+
+                <h3>Key Questions Answered</h3>
+                <h4>Ã°Å¸â€œÅ  Content & Popularity Analysis</h4>
+                <ul>
+                    <li>Which video categories (e.g., Music, Entertainment, Education, Gaming) trend most frequently?</li>
+                    <li>What engagement factors (views, likes, comments) are most correlated with a video becoming trending?</li>
+                    <li>How does engagement vary across regions/countries?</li>
+                </ul>
+                <h4>Ã¢ÂÂ± Time-Based Trends</h4>
+                <ul>
+                    <li>At what times or days are trending videos most commonly published?</li>
+                    <li>Are there seasonal or monthly patterns in trending content?</li>
+                    <li>How quickly do videos accumulate engagement after publishing?</li>
+                </ul>
+
+                <h3>Technology Stack</h3>
+                <p><strong>Technologies:</strong> Python, SQL, AWS S3, AWS Glue, AWS Lambda, AWS Athena, Pandas, Apache Parquet, ETL Pipelines, Data Lake Architecture</p>
             </div>
         </div>
     </div>
@@ -736,23 +561,26 @@
     <div id="modal-project5" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <h2>PROJECT OVERVIEW: Airflow ETL Orchestration</h2>
+            <h2>Automated ETL Orchestration with Apache Airflow & AWS</h2>
             <div class="modal-images">
                 <img src="images/project 5-architecture.png" alt="Airflow Architecture">
                 <img src="images/project 5-dag-results.png" alt="DAG Results">
             </div>
             <div class="modal-body">
-                <h3 class="modal-kicker">Problem</h3>
-                <p>Data teams need dependable schedules, retries, and observability when moving data across AWS—not cron jobs with silent failures.</p>
-                <h3 class="modal-kicker">Approach</h3>
-                <p>Built modular Airflow DAGs for extract/transform/load into S3/Redshift patterns, with logging, alerting, and fault-tolerant retries aligned to operational expectations.</p>
-                <h3 class="modal-kicker">Tech Stack</h3>
-                <p>Apache Airflow, Python, AWS S3, AWS Lambda, AWS Glue, AWS IAM, CloudWatch, SQL</p>
-                <h3 class="modal-kicker">Impact</h3>
-                <ul class="modal-impact-list">
-                    <li>Positions you as someone who understands production orchestration—not only notebook ETL.</li>
-                    <li>Timely data handoff for downstream analytics and dashboards.</li>
+                <h3>Project Overview</h3>
+                <p>Developed a fully automated ETL workflow using Apache Airflow to orchestrate data pipelines across AWS services, enabling scheduled ingestion, transformation, and storage of structured datasets.</p>
+
+                <h3>Key Features & Achievements</h3>
+                <ul>
+                    <li>Built modular Airflow DAGs to extract data from sources, perform Python-based transformations, and load clean outputs into AWS S3 and a managed analytics store (e.g., Redshift/Athena)</li>
+                    <li>Implemented monitoring, logging, and alerting to ensure operational reliability</li>
+                    <li>Configured error notifications and restart strategies built into the pipeline for fault tolerance</li>
+                    <li>Demonstrates advanced orchestration skills and real-world data engineering practices that support scalable data platforms</li>
+                    <li>Automated scheduling ensures timely data availability for downstream analytics and reporting</li>
                 </ul>
+
+                <h3>Technology Stack</h3>
+                <p><strong>Technologies:</strong> Apache Airflow, Python, AWS S3, AWS Lambda, AWS Glue, AWS IAM, AWS CloudWatch, SQL, ETL Automation</p>
             </div>
         </div>
     </div>
@@ -760,27 +588,36 @@
     <div id="modal-project6" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <h2>PROJECT OVERVIEW: Entertainment Analytics Dashboard</h2>
+            <h2>Lights, Data, Action Ã¢â‚¬â€ Entertainment Industry Analytics Dashboard Suite</h2>
             <div class="modal-images">
                 <img src="images/project 6-dashboard.png" alt="Entertainment Dashboard">
             </div>
             <div class="modal-body">
-                <h3 class="modal-kicker">Problem</h3>
-                <p>Streaming and film stakeholders need a single place to explore cross-dataset trends—Netflix catalogs, IMDb rankings, TV performance, and awards—without static slides.</p>
-                <h3 class="modal-kicker">Approach</h3>
-                <p>Integrated and standardized multiple Kaggle sources in SQL/Python, modeled for analysis, and built four linked Tableau dashboards with filters, drill paths, and narrative layout for executives.</p>
-                <h3 class="modal-kicker">Tech Stack</h3>
-                <p>Tableau, SQL, Python, data cleaning, data modeling, EDA, dashboard design</p>
-                <h3 class="modal-kicker">Impact</h3>
-                <ul class="modal-impact-list">
-                    <li>Surfaces engagement and revenue drivers by content type—supports investment and production conversations.</li>
-                    <li>Demonstrates storytelling with data, not only technical charts.</li>
+                <h3>Project Overview</h3>
+                <p>Built a suite of four interactive Tableau dashboards analyzing Netflix content, IMDb Top 1000 movies, IMDb TV shows, and Oscar awards data to uncover patterns in content performance, audience preferences, and critical recognition.</p>
+
+                <h3>Key Features & Achievements</h3>
+                <ul>
+                    <li>Integrated and cleaned multiple Kaggle datasets, standardized schemas, and modeled relationships between ratings, revenue, genres, directors, actors, and awards</li>
+                    <li>Designed highly interactive dashboards with global filters, drill-downs, and custom layouts to support exploration by genre, year, content type, and award status</li>
+                    <li>The solution enables streaming platforms and studios to make data-driven decisions around content investment, acquisition, and production strategy</li>
+                    <li>Provides insights into which content types and genres drive the most engagement and revenue</li>
                 </ul>
+
+                <h3>Key Questions Answered</h3>
+                <h4>Ã°Å¸Å½Â¬ Content Strategy & Investment</h4>
+                <ul>
+                    <li>Which genres generate the highest combination of critical acclaim (Oscars) and commercial success (gross revenue)?</li>
+                    <li>Do Oscar-winning movies tend to also have higher IMDb ratings and audience popularity?</li>
+                    <li>Which genres consistently perform well across Netflix, IMDb Movies, and IMDb TV Shows?</li>
+                </ul>
+
+                <h3>Technology Stack</h3>
+                <p><strong>Technologies:</strong> Tableau, SQL, Python, Data Cleaning, Data Modeling, Exploratory Data Analysis, Dashboard Design</p>
             </div>
         </div>
     </div>
 
-    <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
     <script src="script.js"></script>
 </body>
 </html>

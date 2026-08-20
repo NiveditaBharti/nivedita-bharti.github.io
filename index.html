@@ -12,7 +12,6 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">NB</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -21,6 +20,11 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-social">
+                <a href="mailto:niveditabharti94@gmail.com" class="nav-social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nivedita-bharti-578329a1/" target="_blank" class="nav-social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/NiveditaBharti" target="_blank" class="nav-social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -35,13 +39,13 @@
         <div class="hero-container">
             <h1 class="hero-title">Nivedita Bharti</h1>
             <p class="hero-subtitle"><span class="typewriter"></span></p>
+            <div class="open-to-work">
+                <span class="open-badge"><i class="fas fa-circle-dot"></i> Open to Full-Time Opportunities</span>
+            </div>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
@@ -51,11 +55,19 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p class="about-text">
-                    MS in Information Management (UIUC) student with 6+ years of consulting experience (Deloitte, Cognizant)
-                    and current Credit Intern at Synchrony. I specialize in B2B consulting, data analytics, data engineering,
-                    and applied AI/GenAI, building end-to-end pipelines and analytics solutions that turn complex data into
-                    business impact.
+                    With 6+ years spanning enterprise consulting at Deloitte and Cognizant and a Master's in Information Management from UIUC, I bring together business strategy and deep technical execution across data engineering, applied AI, and CRM platforms. I build production GenAI systems (RAG pipelines, LLM integrations), scalable AWS data lakes, and Tableau/Power BI analytics that turn raw data into business decisions — and I've implemented Salesforce, Oracle CX Cloud, and Microsoft Dynamics 365 for enterprise clients. Whether the problem is a data pipeline, an AI assistant, or a digital transformation roadmap, I connect the technical and the strategic.
                 </p>
+                <p class="about-status">
+                    <i class="fas fa-graduation-cap"></i> MS Information Management, UIUC &nbsp;·&nbsp; Graduating May 2026 &nbsp;·&nbsp; GPA: 4.0/4.0
+                </p>
+                <div class="domain-badges">
+                    <span class="domain-badge badge-cyan"><i class="fas fa-briefcase"></i> Consulting</span>
+                    <span class="domain-badge badge-violet"><i class="fas fa-database"></i> Data Engineering</span>
+                    <span class="domain-badge badge-pink"><i class="fas fa-brain"></i> Gen AI & LLMs</span>
+                    <span class="domain-badge badge-cyan"><i class="fas fa-chart-line"></i> Data Analysis & BI</span>
+                    <span class="domain-badge badge-violet"><i class="fas fa-bullseye"></i> MarTech & CRM</span>
+                    <span class="domain-badge badge-pink"><i class="fas fa-rocket"></i> Digital Transformation</span>
+                </div>
             </div>
         </div>
     </section>
@@ -65,44 +77,61 @@
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Present</span>
-                        <h3>Credit Intern</h3>
-                        <h4>Synchrony</h4>
+                        <div class="timeline-header">
+                            <img src="images/logos/synchrony.svg" class="company-logo" alt="Synchrony Financial">
+                            <div class="timeline-title-group">
+                                <h3>Credit Strategy Intern</h3>
+                            </div>
+                            <span class="timeline-date">May 2025 – Present</span>
+                        </div>
+
                         <ul>
-                            <li>Applied data analytics and AI/GenAI to credit risk and business operations</li>
-                            <li>Collaborated with cross-functional teams on data-driven decision making</li>
+                            <li>Cut 10+ hours/week of manual reporting by building Tableau and Power BI dashboards tracking portfolio trends and operational exceptions</li>
+                            <li>Achieved 90% strategy accuracy validating collections decision-tree outcomes (PowerCurve) via SAS/Python workflow analysis</li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Deloitte</span>
-                        <h3>Consultant / Senior Consultant</h3>
-                        <h4>Deloitte</h4>
+                        <div class="timeline-header">
+                            <img src="images/logos/deloitte.svg" class="company-logo" alt="Deloitte">
+                            <div class="timeline-title-group">
+                                <h3>Senior Consultant <span class="title-sub">(Deputy Manager)</span></h3>
+                            </div>
+                            <span class="timeline-date">Oct 2021 – Aug 2024</span>
+                        </div>
+
                         <ul>
-                            <li>Led digital transformation and technology consulting engagements for enterprise clients</li>
-                            <li>Managed stakeholder relationships and delivered executive-level reporting</li>
-                            <li>Drove process improvement and automation initiatives</li>
+                            <li>Generated $20M+ annual revenue uplift across 3 Fortune 500 business units by architecting Oracle Cloud, Salesforce, and Azure integrations — cutting data sync failures by 40%</li>
+                            <li>Lifted lead pipeline 20% and campaign ROI 35% by designing A/B testing programs across SFMC and Oracle Eloqua journeys</li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Cognizant</span>
-                        <h3>Programmer Analyst / Technology Consultant</h3>
-                        <h4>Cognizant</h4>
+                        <div class="timeline-header">
+                            <img src="images/logos/cognizant.svg" class="company-logo" alt="Cognizant">
+                            <div class="timeline-title-group">
+                                <h3>Senior Developer <span class="title-sub">(Technology Consultant)</span></h3>
+                            </div>
+                            <span class="timeline-date">Dec 2017 – Oct 2021</span>
+                        </div>
+
                         <ul>
-                            <li>Built end-to-end data pipelines and analytics solutions</li>
-                            <li>Delivered B2B consulting and technology implementation projects</li>
-                            <li>Collaborated in Agile/Scrum teams for enterprise software delivery</li>
+                            <li>Grew campaign ROI 45% and cut manual effort 40% by engineering A/B testing workflows and automation across 50+ omni-channel CRM campaigns</li>
+                            <li>Accelerated analytics delivery by building SQL/Python pipelines processing 50K+ daily transactions into analytics-ready datasets</li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -117,12 +146,19 @@
                     <h3>Master of Science</h3>
                     <h4>Information Management</h4>
                     <p class="education-school">University of Illinois Urbana-Champaign (UIUC)</p>
+                    <p class="education-meta">May 2026 &nbsp;·&nbsp; GPA: 4.0 / 4.0</p>
                 </div>
                 <div class="education-card">
                     <div class="education-icon"><i class="fas fa-university"></i></div>
                     <h3>Bachelor of Engineering</h3>
                     <h4>Engineering</h4>
                     <p class="education-school">Birla Institute of Technology</p>
+                </div>
+                <div class="education-card cert-card">
+                    <div class="education-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certified Scrum Master</h3>
+                    <h4>CSM</h4>
+                    <p class="education-school">SAFe — Scaled Agile Framework</p>
                 </div>
             </div>
         </div>
@@ -136,12 +172,13 @@
                 <div class="achievement-item">
                     <span class="achievement-number" data-target="6">0</span>
                     <span class="achievement-suffix">+</span>
-                    <p>Years Consulting Experience</p>
+                    <p>Years Full-Time Experience</p>
                 </div>
                 <div class="achievement-item">
-                    <span class="achievement-number" data-target="93">0</span>
-                    <span class="achievement-suffix">%</span>
-                    <p>ML Model Accuracy</p>
+                    <span class="achievement-number" data-target="10">0</span>
+                    <span class="achievement-suffix">+</span>
+                    <p>Successful Go-Lives</p>
+                    <span class="achievement-sub">Across 3 Fortune 500 Companies</span>
                 </div>
                 <div class="achievement-item">
                     <span class="achievement-number" data-target="6">0</span>
@@ -149,9 +186,36 @@
                     <p>End-to-End Projects</p>
                 </div>
                 <div class="achievement-item">
-                    <span class="achievement-number" data-target="1">0</span>
-                    <span class="achievement-suffix">M+ Records</span>
-                    <p>Processed & Analyzed</p>
+                    <span class="achievement-number" data-target="10">0</span>
+                    <span class="achievement-suffix">M+</span>
+                    <p>Records Processed & Analyzed</p>
+                </div>
+            </div>
+
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="award-body">
+                        <span class="award-name">Incredibles of the Quarter</span>
+                        <span class="award-meta">Cognizant &nbsp;·&nbsp; 2018</span>
+                        <p class="award-desc">Recognized for going above and beyond standard job duties to drive company success.</p>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-star"></i></div>
+                    <div class="award-body">
+                        <span class="award-name">Practitioner Spotlight Award</span>
+                        <span class="award-meta">Deloitte &nbsp;·&nbsp; 2023</span>
+                        <p class="award-desc">Awarded for delivering exceptional results on difficult, high-pressure client engagements.</p>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="award-body">
+                        <span class="award-name">Live the Dot</span>
+                        <span class="award-meta">Deloitte &nbsp;·&nbsp; 2023</span>
+                        <p class="award-desc">Recognized for teamwork, client centricity, and going above and beyond on projects.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -162,30 +226,19 @@
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-grid">
-                <!-- Business & Consulting -->
+                <!-- Consulting & Digital Transformation -->
                 <div class="skill-category">
                     <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>Business & Consulting</h3>
+                    <h3>Consulting & Digital Transformation</h3>
                     <ul>
-                        <li>Digital Transformation & Technology Consulting</li>
-                        <li>Business Requirements Gathering & Stakeholder Management</li>
+                        <li>Digital Transformation Strategy & Execution</li>
+                        <li>Technology Consulting (B2B, Enterprise, SaaS)</li>
+                        <li>Business Requirements Gathering</li>
+                        <li>Stakeholder Management & Executive Reporting</li>
                         <li>Product & Strategy Analysis</li>
                         <li>Process Improvement & Automation</li>
-                        <li>Data-Driven Decision Making</li>
-                        <li>Client Communication & Executive Reporting</li>
-                        <li>Agile / Scrum Collaboration</li>
-                    </ul>
-                </div>
-
-                <!-- Programming & Analytics -->
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>Programming & Analytics</h3>
-                    <ul>
-                        <li>Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras)</li>
-                        <li>SQL</li>
-                        <li>SAS</li>
-                        <li>R</li>
+                        <li>Agile / Scrum Delivery</li>
+                        <li>Jira</li>
                     </ul>
                 </div>
 
@@ -194,65 +247,70 @@
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
                     <h3>Data Engineering</h3>
                     <ul>
-                        <li>AWS (S3, Glue, Redshift, Lambda)</li>
+                        <li>AWS (S3, Glue, Lambda, Redshift, Athena)</li>
                         <li>Databricks</li>
-                        <li>Airflow</li>
+                        <li>Apache Airflow</li>
                         <li>PySpark</li>
                         <li>dbt</li>
-                        <li>ETL/ELT Pipelines</li>
+                        <li>ETL/ELT Pipeline Design</li>
                         <li>Data Modeling & Warehousing</li>
+                        <li>Data Lake Architecture</li>
                     </ul>
                 </div>
 
-                <!-- BI & Visualization -->
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>BI & Visualization</h3>
-                    <ul>
-                        <li>Tableau</li>
-                        <li>Power BI</li>
-                        <li>EazyBI</li>
-                    </ul>
-                </div>
-
-                <!-- ML & GenAI -->
+                <!-- Gen AI & LLMs -->
                 <div class="skill-category">
                     <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                    <h3>ML & GenAI</h3>
+                    <h3>Gen AI & LLMs</h3>
                     <ul>
-                        <li>Machine Learning (Regression, Classification, XGBoost, LSTM)</li>
-                        <li>LangChain</li>
-                        <li>LlamaIndex</li>
-                        <li>Azure OpenAI</li>
+                        <li>LangChain & LlamaIndex</li>
+                        <li>Azure OpenAI & Groq (Llama-3)</li>
                         <li>Retrieval-Augmented Generation (RAG)</li>
                         <li>Vector Databases (Chroma, FAISS)</li>
                         <li>Prompt Engineering</li>
+                        <li>Machine Learning (XGBoost, LSTM, Scikit-learn)</li>
                     </ul>
                 </div>
 
-                <!-- Cloud & Platforms -->
+                <!-- Data Analysis & BI -->
                 <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud & Platforms</h3>
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Analysis & BI</h3>
                     <ul>
-                        <li>AWS</li>
-                        <li>Microsoft Azure (AI Foundry)</li>
-                        <li>GitHub</li>
+                        <li>Tableau & Power BI</li>
+                        <li>EazyBI</li>
+                        <li>SQL</li>
+                        <li>Python (Pandas, Matplotlib, Seaborn)</li>
+                        <li>SAS</li>
+                        <li>Exploratory Data Analysis</li>
+                        <li>Dashboard Design & Storytelling</li>
+                    </ul>
+                </div>
+
+                <!-- MarTech & CRM -->
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>MarTech & CRM</h3>
+                    <ul>
                         <li>Salesforce</li>
-                        <li>Oracle Cloud</li>
+                        <li>Oracle CX Cloud</li>
                         <li>Microsoft Dynamics 365</li>
                         <li>Oracle NetSuite</li>
+                        <li>CRM Implementation & Configuration</li>
+                        <li>Customer Data & Campaign Analytics</li>
                     </ul>
                 </div>
 
-                <!-- Tools & Frameworks -->
+                <!-- Cloud & DevOps -->
                 <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & DevOps</h3>
                     <ul>
-                        <li>Jira</li>
+                        <li>Amazon Web Services (AWS)</li>
+                        <li>Microsoft Azure (AI Foundry)</li>
+                        <li>GitHub</li>
                         <li>Confluence</li>
-                        <li>Docker</li>
+                        <li>AWS CloudWatch & IAM</li>
                     </ul>
                 </div>
             </div>
@@ -404,11 +462,11 @@
                         <i class="fas fa-envelope"></i>
                         <span>niveditabharti94@gmail.com</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/nivedita-bharti-57832931/" target="_blank" class="contact-link">
+                    <a href="https://www.linkedin.com/in/nivedita-bharti-578329a1/" target="_blank" class="contact-link">
                         <i class="fab fa-linkedin"></i>
                         <span>LinkedIn Profile</span>
                     </a>
-                    <a href="https://github.com/nivedita-bharti" target="_blank" class="contact-link">
+                    <a href="https://github.com/NiveditaBharti" target="_blank" class="contact-link">
                         <i class="fab fa-github"></i>
                         <span>GitHub Profile</span>
                     </a>

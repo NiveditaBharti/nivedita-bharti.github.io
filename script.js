@@ -130,8 +130,11 @@ if (achievementsSection) {
 (function() {
     const phrases = [
         'Data Engineer',
-        'ML & GenAI Specialist',
-        'Business Consultant'
+        'Gen AI Engineer',
+        'BI Developer & Data Analyst',
+        'MarTech & CRM Consultant',
+        'Digital Transformation Consultant',
+        'Applied AI Builder'
     ];
     const el = document.querySelector('.typewriter');
     if (!el) return;

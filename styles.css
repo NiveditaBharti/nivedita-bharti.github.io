@@ -212,10 +212,10 @@ body::after {
 /* Synthwave perspective grid */
 .synthwave-grid {
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
     left: -50%;
     width: 200%;
-    height: 20%;
+    height: 38%;
     background:
         linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
         linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
@@ -1399,6 +1399,7 @@ section {
     /* Synthwave grid mobile */
     .synthwave-grid {
         height: 40%;
+        bottom: -80px;
     }
 
     /* Timeline mobile */

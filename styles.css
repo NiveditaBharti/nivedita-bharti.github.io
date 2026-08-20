@@ -196,7 +196,7 @@ body::after {
     bottom: 0;
     left: -50%;
     width: 200%;
-    height: 55%;
+    height: 38%;
     background:
         linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
         linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
